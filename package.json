@@ -2,10 +2,10 @@
   "name": "btc-socket",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "node2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "btc-socket": "node index.js"
+    "btc-socket": "node node2.js"
   },
   "keywords": [],
   "author": "",
