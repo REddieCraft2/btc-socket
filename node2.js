@@ -5,6 +5,7 @@ const port = 3000;
 
 let latestCandle = null;
 
+// WebSocket-Verbindung zu Binance für BTC/USDT 1-Minuten-Kerzen
 const binanceSocket = new WebSocket('wss://stream.binance.com:9443/ws/btcusdt@kline_1m');
 
 binanceSocket.on('message', (data) => {
@@ -20,6 +21,11 @@ binanceSocket.on('message', (data) => {
     }
 });
 
+app.get('/', (req, res) => {
+  res.send('Server ist online und läuft!');
+});
+
+// API-Endpunkt für die aktuellste Kerze
 app.get('/api/latest-candle', (req, res) => {
     res.json(latestCandle || {});
 });
