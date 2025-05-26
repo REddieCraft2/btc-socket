@@ -4,8 +4,8 @@
   "description": "",
   "main": "node2.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "open_node2": "node node2.js"
+    "btc-socket": "node node2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
